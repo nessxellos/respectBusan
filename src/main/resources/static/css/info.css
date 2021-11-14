@@ -1,0 +1,28 @@
+.list-group-box {
+	width: 100%;
+	display: flex;
+}
+.list-group {
+	width: 50%;
+	height: 100%;
+	margin: 10px;
+	text-align: center;
+}
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+#hr {
+	border : solid 1px;
+	width : 70%;
+	margin: auto;
+}
+td, th{
+	font-size: 20px;
+}
+img {
+	width:100%; height:100%; object-fit: cover;
+}
+table {
+	text-align: center;
+}

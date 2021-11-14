@@ -1,0 +1,18 @@
+img {
+	width: 100%;
+}
+.card{ 
+	width: 300px;
+	padding: 5px;
+}
+#start {
+	margin-left: 330px;	
+}
+#end {
+	margin-right: 280px;	
+}
+#btn {
+	font-size: 28px;
+	color: wihte;
+	font-weight: 900;
+}

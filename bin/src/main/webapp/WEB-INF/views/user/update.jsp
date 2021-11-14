@@ -1,0 +1,101 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ include file="../layout/header.jsp"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+		<div class="container">
+	<form id="userUpdate" onsubmit="update(${principal.user.id}, event)">
+			<h1>회원 정보 수정</h1>
+			<br> <br>
+			<div class="form-group">
+				<label for="username">아이디:</label> <input type="text"
+					name="username" class="form-control"
+					value="${principal.user.username}" required="required"
+					disabled="disabled">
+			</div>
+
+			<div class="form-group">
+				<label for=password>비밀번호:</label> <input type="password"
+					name="password" class="form-control" placeholder="비밀번호를 입력하세요"
+					required="required">
+			</div>
+
+			<div class="form-group">
+				<label for="email">이메일:</label> <input type="email"
+					class="form-control" name="email" placeholder="이메일을 입력하세요"
+					value="${principal.user.email}" required="required" maxlength="50">
+			</div>
+
+			<label for="gender">성별:</label>
+			<div class="form-check">
+				<label class="form-check-label"> <input type="radio"
+					class="form-check-input" name="gender" value="male">남성
+				</label>
+			</div>
+			<div class="form-check">
+				<label class="form-check-label"> <input type="radio"
+					class="form-check-input" name="gender" value="female">여성
+				</label>
+			</div>
+			<br>
+			<div class="form-group">
+				<label for="age">나이:</label> <select class="form-control" name="age">
+					<option value='10' selected>19세 이하</option>
+					<option value='20'>20~29세</option>
+					<option value='30'>30~39세</option>
+					<option value='40'>40~49세</option>
+					<option value='50'>50~59세</option>
+					<option value='60'>60세 이상</option>
+				</select>
+			</div>
+			<label for="preference">나의 여행 취향 (여러개 선택 가능)</label> <br>
+			<div class="form-check-inline">
+				<label class="form-check-label"> <input type="checkbox"
+					class="form-check-input" name="preference" value="food">맛집
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label"> <input type="checkbox"
+					class="form-check-input" name="preference" value="healing">힐링
+				</label>
+			</div>
+			<div class="form-check-inline">
+				<label class="form-check-label"> <input type="checkbox"
+					class="form-check-input" name="preference" value="view">풍경
+				</label>
+			</div>
+			<br> <br>
+			<button class="btn btn-primary">수정</button>
+			<button type="button" id="btnDelete" class="btn btn-danger">탈퇴</button>
+			<button type="button" class="btn btn-primary"
+				onclick="history.back()">뒤로 가기</button>
+	</form>
+	</div>
+	
+	<script>
+	$("#btnDelete").click(function(){
+		if(!confirm("정말 삭제할까요?"))
+			return false
+		$.ajax({
+			type :"DELETE",
+			url : "/user/${principal.user.id}/delete",
+			success:function(resp){
+				console.log(resp);
+				if(resp=="success"){
+					alert("삭제성공");
+					location.href="/"
+				}
+			} //success
+		})//ajax
+	})  //btnDelete
+	
+	</script>
+	<script src="/js/update.js"></script>
+
+</body>
+</html>

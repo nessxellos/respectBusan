@@ -1,0 +1,47 @@
+.list-group-box {
+	width: 100%;
+	display: flex;
+}
+#flex{
+	display: flex;
+}
+h1 {
+	text-align: center;
+	margin-top: 30px;
+}
+#card {
+	border: solid 1px #96C7ED;
+	border-radius: 10px;
+	padding-top: 30px;
+}
+#ul {
+	width: 50%;
+	padding: 0px;
+	margin: 1px; 
+}
+#view {
+	width: auto;
+}
+.card:hover {
+	color: silver;
+	cursor: pointer;
+}
+#hr {
+	border : solid 1px;
+	width : 50%;
+	margin: auto;
+}
+
+#btn{
+	float: right;
+	margin: 5px;
+	font-size: 24px;
+}
+img {
+	margin: 10px;
+	width: 400px;
+}
+#text {
+	padding: auto;
+	margin: auto;
+}

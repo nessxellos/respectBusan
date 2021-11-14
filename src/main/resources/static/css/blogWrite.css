@@ -1,0 +1,22 @@
+h1 {
+	text-align: center;
+	font-size: 50px;
+}
+h2 {
+	text-align: center;
+	font-size: 36px;
+}
+input {
+	font-size: 24px;
+	padding: 10px;
+	border: none;
+}
+.btn{
+	padding: 5px;	
+}
+#btnWrite {
+	float: right; 
+	margin-bottom: 20px;
+	padding : 10px;
+	font-size: 24px;
+}

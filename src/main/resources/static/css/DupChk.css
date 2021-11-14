@@ -1,0 +1,15 @@
+button {
+	font-size: 16px;
+	height: 34px;
+	margin-left: 10px;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+}
+div{
+	padding-top: 40px;
+}
+input{
+	height: 28px;
+	border: solid 1px black;
+}

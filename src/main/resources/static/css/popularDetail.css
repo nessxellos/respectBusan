@@ -1,0 +1,120 @@
+img {
+	width: 700px;
+	height: 500px;
+}
+#word {
+	width: 500px;
+	height: 500px;
+}
+#hr {
+	border : solid 1px;
+	width : 50%;
+	margin: auto;
+}
+hr {
+	border : solid 1px;
+}
+p {
+	font-size: 24px;
+	margin: 20px;
+	line-height: 1.8;
+}
+li {
+	font-size : 22px;
+	padding: 10px;
+}
+#title {
+	text-align: center;
+}
+ul {
+	width: 50%;
+	padding: 0px;
+	margin: 1px; 
+}
+#flex {
+	display: flex;
+}
+#btn1{ 
+	margin: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+}	
+#btnComment{
+	width : 200px;
+	height : 60px;
+	font-size: 24px;
+	background-color: highlight;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+#btn2{
+	width : 200px;
+	height : 60px;
+	font-size: 24px;
+	background-color: black;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+button {
+	color: gray;
+	border: solid 2px;
+	border-color: gray;
+	background-color: white;
+	padding: 10px 20px 10px 20px;
+	border-radius: 5px;
+	font-size: 18px;
+}
+button:hover {
+	color: fuchsia;
+	border-color: fuchsia;
+}
+th {
+	font-size: 20px;
+	text-align: center;
+}
+td {
+	font-size: 22px;
+	padding-left: 10px;
+	margin: auto;
+	padding: auto;
+}
+#date {
+	font-size: 20px;
+	margin: auto;
+}
+#commentDel {
+	display: inline-block;
+}
+#btnDel {
+	font-size: 13px;
+	background-color: inherit;
+	color: red;
+	box-shadow: none;
+}
+#map {
+	width: 600px; 
+	height: 450px;
+}
+a:visited {
+ 	color:grey;
+}
+span {
+	font-size: 22px;
+	margin-right: 3px;
+}
+#notFav {
+	color:grey;
+}
+#fav {
+ 	color:#1E90FF;
+}
+i {
+	vertical-align:bottom;
+	margin-bottom: 3px;
+}
+#male{
+	font-size: 22px;
+}
+#female{
+	font-size: 22px;
+}
+#age{
+	font-size: 22px;
+}
